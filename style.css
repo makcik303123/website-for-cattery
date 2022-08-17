@@ -1,0 +1,136 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Montserrat';
+  padding: 0;
+  margin: 0;
+  color: 000;
+  font-size: 24px;
+}
+h1 ,h2, h3, h4, h5, h6 {
+  padding: 0;
+  margin: 0;
+  }
+ul, li {
+  /* margin-block-start: 0px;
+  margin-block-end: 0px; */
+  display: block;
+  padding-inline-start: 0px;
+}
+.container {
+  width: 100%;
+  max-width: 1608px;
+  margin: 0 auto;
+}
+
+.header {
+  width: 100%;
+  height:  100vh;
+  background: url('img/Frame1.jpg') center no-repeat;
+  background-size: cover;
+}
+header a {
+  color: #000;
+}
+/* .name_logo {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 39px; 
+} */
+.number {
+  font-size: 32px;
+  font-weight: 900;
+  /* font-family: 'Montserrat'; */
+  color: #000;
+}
+.menu {
+  padding-top: 47px;
+  display: flex;
+}
+.menu li a {
+  text-decoration: none;
+  font-size: 32px;
+  margin-right: 99px;  
+}
+ .logo {
+  /* margin-left: 39px; */
+  margin-top: -9px;
+}
+h1 {
+  font-size: 46px;
+  margin-top: 178px;
+  width: 514px;
+  /* height: 171px; */
+
+}
+.p1 {
+  width: 635px;
+  /* height: 118px; */
+  
+}
+
+.Button {
+  display: block;
+  text-align: center;
+  border-radius: 40px;
+  letter-spacing:  0.1em;
+  padding: 23px;
+  margin-left: 74px;
+  margin-top: 119px;
+  text-decoration: none;
+  width: 303px;
+  background: linear-gradient(273.98deg, #728241 8.48%, #9EBF33 95.06%);;
+  
+  transition: 0.2s;
+}
+
+a.Button:hover { background: linear-gradient(#f5ae00, #f59500) #f5ae00; }
+a.Button:active { background: linear-gradient(#f59500, #f5ae00) #f59500; }
+/* PART 2 slides */
+
+
+
+
+
+.container_1 {
+  background-color: rgba(139, 133, 133, 0.651) ;
+  width: 100%;
+  
+  display: flex;
+  padding: 0px 20px;
+}
+
+.slide {
+  height: 80vh;
+  border-radius: 20px;
+  margin: 10px;
+  cursor: pointer;
+  color: rgb(0, 0, 0);
+  flex: 1;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  transition: all 500ms ease-in-out;
+}
+
+.slide h3 {
+  position: absolute;
+  font-size: 38px;
+  bottom: 20px;
+  left: 20px;
+  margin: 0;
+  opacity: 0;
+}
+
+.slide.active {
+  flex: 10;
+}
+
+.slide.active h3 {
+  opacity: 1;
+  transition: opacity 0.3s ease-in 0.4s;
+}
